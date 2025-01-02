@@ -18,6 +18,7 @@ export class AppComponent {
     email = 'dinosdetailss@gmail.com';
     phoneNumber = '(740) 296-8807';
     phoneNumberRaw = '+17402968807'; // for tel: links
+    bookingUrl = 'https://docs.google.com/forms/d/1neRl-h6J1Q2WL8h5JfkDIqDBSFrtWpO6JSyv7ne1aVM/edit';
 
     instagramUrl = 'https://www.instagram.com/dinosdetailing_/';
     youtubeUrl = 'https://youtube.com/@dinosdetailingg?si=pY6nqhg77knbE7UF';
