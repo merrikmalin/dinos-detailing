@@ -67,50 +67,14 @@
 
         <!-- First Services Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-            <!-- Interior Detail -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105">
-                <img src="/assets/images/interior-detail.jpg" alt="Interior Detail" 
+            <div *ngFor="let service of firstRowServices"
+                 class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105">
+                <img [src]="service.image" [alt]="service.title" 
                      class="w-full h-48 object-cover">
                 <div class="p-6">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Interior Detail</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">{{service.title}}</h3>
                     <p class="text-gray-600">
-                        Complete interior cleaning to restore freshness and remove stains.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Exterior Detail -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105">
-                <img src="/assets/images/exterior-detail.jpg" alt="Exterior Detail" 
-                     class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Exterior Detail</h3>
-                    <p class="text-gray-600">
-                        Professional cleaning to enhance the exterior shine and eliminate imperfections.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Ozone Elimination -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105">
-                <img src="/assets/images/ozone-elimination.jpeg" alt="Ozone Elimination" 
-                     class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Ozone Elimination</h3>
-                    <p class="text-gray-600">
-                        Eliminating Odors with an ozone generator and shampooing carpets ensures a deep clean and fresh environment.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Interior & Exterior Detail -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105">
-                <img src="/assets/images/interior-exterior.jpg" alt="Interior & Exterior Detail" 
-                     class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Interior & Exterior Detail</h3>
-                    <p class="text-gray-600">
-                        An interior and exterior detail includes thorough cleaning of the car's interior surfaces, seats, and carpets. As well as washing, polishing, and protecting the exterior paint and wheels.
+                        {{service.description}}
                     </p>
                 </div>
             </div>
@@ -118,42 +82,14 @@
 
         <!-- Second Services Grid -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <!-- Premium Detail -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105">
-                <img src="/assets/images/premium-detail.jpg" alt="Premium Detail" 
+            <div *ngFor="let service of secondRowServices"
+                 class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105">
+                <img [src]="service.image" [alt]="service.title" 
                      class="w-full h-48 object-cover">
                 <div class="p-6">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Premium Detail</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">{{service.title}}</h3>
                     <p class="text-gray-600">
-                        A premium detail offers an extensive cleaning package includes deep interior cleaning, 
-                        carpet shampooing, exterior polishing, and a protective wax coating, ensuring your vehicle looks 
-                        and feels like new. It's the ultimate service for maintaining your car's appearance and value.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Routine Service Subscription -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105">
-                <img src="/assets/images/routine-subscription.jpg" alt="Routine Service Subscription" 
-                     class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Routine Service Subscription</h3>
-                    <p class="text-gray-600">
-                        A monthly detailing subscription ensures your vehicle receives regular, professional care, 
-                        keeping it consistently clean and well-maintained all year round.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Heavy Equipment Detail -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105">
-                <img src="/assets/images/heavy-equipment-detail.jpg" alt="Heavy Equipment Detail" 
-                     class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Heavy Equipment Detail</h3>
-                    <p class="text-gray-600">
-                        Heavy equipment detail involves thorough cleaning and maintenance of large machinery 
-                        ensuring optimal performance and extending the lifespan of the equipment.
+                        {{service.description}}
                     </p>
                 </div>
             </div>
@@ -185,8 +121,7 @@
                    target="_blank" 
                    rel="noopener noreferrer"
                    class="text-blue-600 hover:text-blue-800 hover:underline">
-                    11 S, S Zane Hwy, Martins Ferry, OH
-                </a>, 
+                    11 S, S Zane Hwy, Martins Ferry, OH</a>, 
                 we are dedicated to delivering exceptional results and top-tier customer service. Trust us to make your car look and feel brand new.
             </p>
         </div>
