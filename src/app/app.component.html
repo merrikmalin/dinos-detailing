@@ -68,7 +68,7 @@
         <!-- First Services Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             <div *ngFor="let service of firstRowServices"
-                 class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105">
+                 class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform">
                 <img [src]="service.image" [alt]="service.title" 
                      class="w-full h-48 object-cover">
                 <div class="p-6">
@@ -83,7 +83,7 @@
         <!-- Second Services Grid -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <div *ngFor="let service of secondRowServices"
-                 class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105">
+                 class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform">
                 <img [src]="service.image" [alt]="service.title" 
                      class="w-full h-48 object-cover">
                 <div class="p-6">
